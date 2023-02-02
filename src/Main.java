@@ -11,12 +11,12 @@ public class Main {
     }
     public static void insertIndexToTheRightPosition(int[] arr, int index) {
         for (int i = index; i > 0; i--) {
-            if(arr[i]<arr[i-1]) swapBack(arr,i);
+            if(arr[i]<arr[i-1]) swapBehind(arr,i);
             else break;
         }
     }
 
-    private static void swapBack(int[] arr, int i) {
+    private static void swapBehind(int[] arr, int i) {
         int temp=arr[i];
         arr[i]=arr[i-1];
         arr[i-1]=temp;
